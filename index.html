@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f5f5f7;
+        color: #222;
+      }
+
+      .hero {
+        padding: 6rem 0;
+        background: linear-gradient(135deg, #2563eb, #3b82f6);
+        color: #fff;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 700;
+      }
+
+      .hero p {
+        max-width: 36rem;
+        margin: 1rem auto 2rem;
+        font-size: 1.1rem;
+      }
+
+      .feature-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: rgba(37, 99, 235, 0.1);
+        color: #2563eb;
+        margin-bottom: 1rem;
+      }
+
+      .testimonial {
+        background-color: #fff;
+        border-radius: 0.75rem;
+        padding: 2rem;
+        box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.1);
+        border: 1px solid rgba(15, 23, 42, 0.05);
+      }
+
+      footer {
+        background-color: #0f172a;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 2.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">BrightStart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-lg-3" href="#cta">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="about">
+      <div class="container">
+        <h1>Build Your Next Idea With Confidence</h1>
+        <p>
+          BrightStart helps teams plan, launch, and grow digital products. We focus on clarity and
+          momentum so you can focus on delivering value to your customers.
+        </p>
+        <a class="btn btn-light btn-lg text-primary fw-semibold" href="#features">Explore Features</a>
+        <a class="btn btn-outline-light btn-lg ms-2" href="#cta">Start Today</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5" id="features">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h2 class="fw-bold">What We Offer</h2>
+              <p class="text-muted">
+                Everything you need to launch with confidence, stay on track, and delight your users.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="bg-white p-4 h-100 rounded-4 border">
+                <div class="feature-icon">
+                  <span>📈</span>
+                </div>
+                <h5 class="fw-semibold">Clear Roadmaps</h5>
+                <p class="text-muted">
+                  Plan feature releases with simple roadmaps that keep every teammate on the same page.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-white p-4 h-100 rounded-4 border">
+                <div class="feature-icon">
+                  <span>⚡</span>
+                </div>
+                <h5 class="fw-semibold">Fast Iteration</h5>
+                <p class="text-muted">
+                  Use lightweight workflows that help you test assumptions quickly and adjust with ease.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-white p-4 h-100 rounded-4 border">
+                <div class="feature-icon">
+                  <span>🤝</span>
+                </div>
+                <h5 class="fw-semibold">Aligned Teams</h5>
+                <p class="text-muted">
+                  Share context effortlessly so engineering, design, and product stay aligned throughout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <h2 class="fw-bold">Built For Focused Teams</h2>
+              <p class="text-muted">
+                We designed BrightStart to remove noise, keep work visible, and help teams ship without
+                the usual friction. No complicated setup, no steep learning curve, just the tools you
+                need when you need them.
+              </p>
+              <ul class="list-unstyled text-muted">
+                <li>• Easy onboarding with guided templates</li>
+                <li>• Insightful reports that highlight what matters</li>
+                <li>• Flexible views for planners, builders, and stakeholders</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="testimonial">
+                <p class="fs-5">
+                  “BrightStart keeps everyone focused on what will move the needle. Our team ships
+                  faster and spends less time updating slides.”
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: 56px; height: 56px;">
+                    JD
+                  </div>
+                  <div>
+                    <div class="fw-semibold">Jordan Diaz</div>
+                    <small class="text-muted">Head of Product, Horizon Labs</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="cta">
+        <div class="container text-center">
+          <h2 class="fw-bold">Ready To Take The Next Step?</h2>
+          <p class="text-muted mx-auto" style="max-width: 32rem;">
+            Join teams that keep their launches on track with BrightStart. Get started in minutes and
+            see how simple focused collaboration can be.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#contact">Request A Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <h5 class="fw-semibold">BrightStart</h5>
+            <p class="mb-1">Have questions? We are here to help.</p>
+            <p class="mb-0">
+              Email: <a class="link-light" href="mailto:hello@brightstart.io">hello@brightstart.io</a>
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-1">123 Launch Lane, Suite 400</p>
+            <p class="mb-1">San Francisco, CA 94107</p>
+            <p class="mb-0">&copy; 2025 BrightStart. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
